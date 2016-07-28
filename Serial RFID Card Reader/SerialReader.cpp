@@ -78,8 +78,8 @@ void SerialReader::Close()
 {
     if (m_hSerial != INVALID_HANDLE_VALUE)
     {
-        CloseHandle(m_hSerial);
         m_isReading = false;
+        CloseHandle(m_hSerial);
     }
 }
 
